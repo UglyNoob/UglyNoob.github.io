@@ -7,6 +7,19 @@
 		</title>
 	</head>
 	<body>
+		<script>
+			alert("欢迎欢迎")
+			function plus(){
+				var a=document.getElementById("a").value
+				var b=document.getElementByID("b").value
+				var result=document.getElementById("result")
+				if(isNaN(a)||isNaN(b){
+					result.innerHTML="求求你瞪大你的眼睛看看你输的是不是数字"
+					return;
+				}
+				result.innerHTML=a+b
+			}
+		</script>
 		<h1>
 			iomnipotenti的测试网站喔
 		</h1>
@@ -37,18 +50,5 @@
 			<strong id="result">结果</strong>
 		</p>
 		<button type="button" onclick="plus()">计算</button>
-		<script>
-			alert("欢迎欢迎")
-			function plus(){
-				var a=document.getElementById("a").value
-				var b=document.getElementByID("b").value
-				var result=document.getElementById("result")
-				if(isNaN(a)||isNaN(b){
-					result.innerHTML="求求你瞪大你的眼睛看看你输的是不是数字"
-					return;
-				}
-				result.innerHTML=a+b
-			}
-		</script>
 	</body>
 </html>
