@@ -34,20 +34,20 @@
 		<p>
 			<input id="a" type="text">+
 			<input id="b" type="text">=
-			<p id="result"></p>
+			<p id="result">结果</p>
 		</p>
 		<button type="button" onclick="plus()">计算</button>
 		<script>
 			alert("欢迎欢迎")
 			function plus(){
-				var a=document.getElementById("a").value
-				var b=document.getElementByID("b").value
+				var a=document.getElementById("a").innerHTML
+				var b=document.getElementByID("b").innerHTML
 				var result=document.getElementById("result")
 				if(isNaN(a)||isNaN(b){
-					result.value="求求你瞪大你的眼睛看看你输的是不是数字"
+					result.innerHTML="求求你瞪大你的眼睛看看你输的是不是数字"
 					return;
 				}
-				result.value=a+b
+				result.innerHTML=a+b
 			}
 		</script>
 	</body>
