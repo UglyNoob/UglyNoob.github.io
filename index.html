@@ -31,8 +31,24 @@
 		<video width=640 height=480 src="飞行河南人.mp4" controls="controls">
 			建议宁换个，这破浏览器放不了视频
 		</video>
+		<p>
+			<input id="a" type="text">+
+			<input id="b" type="text">=
+			<p id="result"></p>
+		</p>
+		<button type="button" onclick="plus()">计算</button>
 		<script>
 			alert("欢迎欢迎")
+			function plus(){
+				var a=document.getElementById("a").value
+				var b=document.getElementByID("b").value
+				var result=document.getElementById("result")
+				if(isNaN(a)||isNaN(b){
+					result.value="求求你瞪大你的眼睛看看你输的是不是数字"
+					return;
+				}
+				result.value=a+b
+			}
 		</script>
 	</body>
 </html>
