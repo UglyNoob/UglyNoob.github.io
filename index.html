@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			It's me, omnipotent~
+		</title>
+	</head>
+	<body>
+		<script>
+			alert("欢迎欢迎")
+			function plus(){
+				var a=document.getElementById("plusA").value
+				var b=document.getElementById("plusB").value
+				var result=document.getElementById("plusResult")
+				if(isNaN(a)||isNaN(b)){
+					result.innerHTML="求求你瞪大你的眼睛看看你输的是不是数字"
+					return;
+				}
+				result.innerHTML=Number(a)+Number(b)
+			}
+			function minus(){
+				var a=document.getElementById("minusA").value
+				var b=document.getElementById("minusB").value
+				var result=document.getElementById("minusResult")
+				if(isNaN(a)||isNaN(b)){
+					result.innerHTML="求求你瞪大你的眼睛看看你输的是不是数字"
+					return;
+				}
+				result.innerHTML=Number(a)-Number(b)
+			}
+			function times(){
+				var a=document.getElementById("timesA").value
+				var b=document.getElementById("timesB").value
+				var result=document.getElementById("timesResult")
+				if(isNaN(a)||isNaN(b)){
+					result.innerHTML="求求你瞪大你的眼睛看看你输的是不是数字"
+					return;
+				}
+				result.innerHTML=Number(a)*Number(b)
+			}
+			function divide(){
+				var a=document.getElementById("divideA").value
+				var b=document.getElementById("divideB").value
+				var result=document.getElementById("divideResult")
+				if(isNaN(a)||isNaN(b)){
+					result.innerHTML="求求你瞪大你的眼睛看看你输的是不是数字"
+					return;
+				}
+				result.innerHTML=Number(a)/Number(b)
+			}
+		</script>
+		<h1>
+			iomnipotenti的测试网站喔
+		</h1>
+		<a href="https://space.bilibili.com/449782218">
+			老子的霹雳霹雳主页
+		</a>
+		<p>
+			先给宁欣赏一下骨灰扬诺夫
+		</p>
+		<video width=640 height=480 src="骨灰扬诺夫.mp4" controls="controls">
+			建议宁换个，这破浏览器放不了视频
+		</video>
+		<p>
+			再让宁聆听黑手哥的教诲
+		</p>
+		<video width=640 height=480 src="黑手.mp4" controls="controls">
+			建议宁换个，这破浏览器放不了视频
+		</video>
+		<p>
+			然后让宁感受河南人的愤怒
+		</p>
+		<video width=640 height=480 src="飞行河南人.mp4" controls="controls">
+			建议宁换个，这破浏览器放不了视频
+		</video>
+		<p>
+			加法器
+			<input id="plusA" type="text">+
+			<input id="plusB" type="text">=
+			<strong id="plusResult">结果</strong>
+			<button type="button" onclick="plus()">计算</button>
+		</p>
+		<p>
+			减法器
+			<input id="minusA" type="text">-
+			<input id="minusB" type="text">=
+			<strong id="minusResult">结果</strong>
+			<button type="button" onclick="minus()">计算</button>
+		</p>
+		<p>
+			乘法器
+			<input id="timesA" type="text">×
+			<input id="timesB" type="text">=
+			<strong id="timesResult">结果</strong>
+			<button type="button" onclick="times()">计算</button>
+		</p>
+		<p>
+			除法器
+			<input id="divideA" type="text">÷
+			<input id="divideB" type="text">=
+			<strong id="divideResult">结果</strong>
+			<button type="button" onclick="divide()">计算</button>
+		</p>
+
+	</body>
+</html>
