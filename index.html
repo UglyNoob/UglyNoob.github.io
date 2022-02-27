@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>
+		I hope you can notice this haha.
+	</title>
+</head>
+
+<body>
+	<script>
+		var time = 0
+		alert("我不是历史虚无主义者。特此声明")
+		alert("正在读取您的历史记录并上传...")
+		function plus() {
+			var a = document.getElementById("plusA").value
+			var b = document.getElementById("plusB").value
+			var result = document.getElementById("plusResult")
+			if (isNaN(a) || isNaN(b)) {
+				result.innerHTML = "求求你瞪大你的眼睛看看你输的是不是数字"
+				return
+			}
+			result.innerHTML = Number(a) + Number(b)
+		}
+		function minus() {
+			var a = document.getElementById("minusA").value
+			var b = document.getElementById("minusB").value
+			var result = document.getElementById("minusResult")
+			if (isNaN(a) || isNaN(b)) {
+				result.innerHTML = "求求你瞪大你的眼睛看看你输的是不是数字"
+				return
+			}
+			result.innerHTML = Number(a) - Number(b)
+		}
+		function times() {
+			var a = document.getElementById("timesA").value
+			var b = document.getElementById("timesB").value
+			var result = document.getElementById("timesResult")
+			if (isNaN(a) || isNaN(b)) {
+				result.innerHTML = "求求你瞪大你的眼睛看看你输的是不是数字"
+				return
+			}
+			result.innerHTML = Number(a) * Number(b)
+		}
+		function divide() {
+			var a = document.getElementById("divideA").value
+			var b = document.getElementById("divideB").value
+			var result = document.getElementById("divideResult")
+			if (isNaN(a) || isNaN(b)) {
+				result.innerHTML = "求求你瞪大你的眼睛看看你输的是不是数字"
+				return
+			}
+			result.innerHTML = Number(a) / Number(b)
+		}
+		function clean_cache() {
+			++time
+			if (time % 2 == 1) {
+				alert("清理成功")
+			} else {
+				alert("清理失败")
+			}
+		}
+	</script>
+	<h1>
+		This is only a test.
+	</h1>
+	<p>
+		<a href="new_year_address2022.html">
+			<h3><strong>Xi Jinping's 2022 New Year Address</strong></h3>
+		</a>
+	</p>
+	<p>
+		<a href="new_year_address2021.html">
+			<h3><strong>Xi Jinping's 2021 New Year Address</strong></h3>
+		</a>
+	</p>
+	<p>
+		<button onclick="clean_cache()">清理缓存</button>
+	</p>
+	<p>
+		苏菲 gobang Last Update: 2022/2/2 12:29:37
+	</p>
+	<p>
+		<audio controls>
+			<source src="internationale.mp3" type="audio/mpeg">
+			Your browser doesn't support audio playing.
+		</audio>
+	</p>
+	<p>
+		<audio controls>
+			<source src="loop.mp3" type="audio/mpeg">
+			Your browser doesn't support audio playing.
+		</audio>
+	</p>
+	<p>
+		<audio controls>
+			<source src="marsaillaise_accelerated.mp3" type="audio/mpeg">
+			Your browser doesn't support audio playing.
+		</audio>
+	</p>
+	<p>
+		<a href="https://github.com/UglyNoob">My Github homepage</a>
+	</p>
+	<p>
+		<a href="pictures">北美中心</a>
+	</p>
+	<p>
+		<a href="websites">有趣的网站</a>
+	</p>
+	<p>
+		<a href="notes">notes</a>
+	</p>
+	<p>
+		<a href="ppm">ppm</a>
+	</p>
+	<p>
+		<img src="zongya.svg"></img>
+	</p>
+	<p>
+		<a href="https://wwb.lanzouw.com/ii6iNzi567g">gobang Password: foay</a>
+	</p>
+	<p>
+		<a href="https://wwb.lanzouw.com/iZJ2fzi566f">secret Password: bq3m</a>
+	</p>
+	加法器
+	<input id="plusA" type="text">+
+	<input id="plusB" type="text">=
+	<strong id="plusResult">结果</strong>
+	<button type="button" onclick="plus()">计算</button>
+	</p>
+	<p>
+		减法器
+		<input id="minusA" type="text">-
+		<input id="minusB" type="text">=
+		<strong id="minusResult">结果</strong>
+		<button type="button" onclick="minus()">计算</button>
+	</p>
+	<p>
+		乘法器
+		<input id="timesA" type="text">×
+		<input id="timesB" type="text">=
+		<strong id="timesResult">结果</strong>
+		<button type="button" onclick="times()">计算</button>
+	</p>
+	<p>
+		除法器
+		<input id="divideA" type="text">÷
+		<input id="divideB" type="text">=
+		<strong id="divideResult">结果</strong>
+		<button type="button" onclick="divide()">计算</button>
+	</p>
+
+</body>
+
+</html>
