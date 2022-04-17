@@ -60,6 +60,8 @@
 				alert("清理失败")
 			}
 		}
+
+		var zongya = true
 	</script>
 	<h1>
 		This is only a test.
@@ -77,9 +79,7 @@
 	<p>
 		<button onclick="clean_cache()">清理缓存</button>
 	</p>
-	<p>
-		苏菲 gobang Last Update: 2022/4/10 16:50:42
-	</p>
+	<p>Last Update: 2022/4/17 17:10:11</p>
 	<p>
 		<audio controls>
 			<source src="internationale.mp3" type="audio/mpeg">
@@ -98,38 +98,26 @@
 			Your browser doesn't support audio playing.
 		</audio>
 	</p>
-	<p>
-		<a href="https://github.com/UglyNoob">My Github homepage</a>
+
+	<p> <a href="https://github.com/UglyNoob">My Github homepage</a> </p>
+	<p> <a href="pictures">北美中心</a> </p>
+	<p> <a href="websites">有趣的网站</a> </p>
+	<p> <a href="notes">notes</a> </p>
+	<p> <a href="ppm">ppm</a> </p>
+	<p> <a href="note_of_makefile">Makefile</a> </p>
+
+	<p> <img src="zongya.svg" id="zongyaimg"
+			onclick='document.getElementById("zongyaimg").src = zongya?"zedong.svg":"zongya.svg"; zongya = !zongya'></img>
 	</p>
+	<p> <a href="https://wwb.lanzouw.com/ii6iNzi567g">gobang Password: foay</a> </p>
+	<p> <a href="https://wwb.lanzouw.com/iZJ2fzi566f">secret Password: bq3m</a> </p>
+	<p> <a href="https://wwb.lanzoub.com/izuQr03curle">flappybird(in progress) Password: 6syb</a> </p>
 	<p>
-		<a href="pictures">北美中心</a>
-	</p>
-	<p>
-		<a href="websites">有趣的网站</a>
-	</p>
-	<p>
-		<a href="notes">notes</a>
-	</p>
-	<p>
-		<a href="ppm">ppm</a>
-	</p>
-	<p>
-		<img src="zongya.svg"></img>
-	</p>
-	<p>
-		<a href="https://wwb.lanzouw.com/ii6iNzi567g">gobang Password: foay</a>
-	</p>
-	<p>
-		<a href="https://wwb.lanzouw.com/iZJ2fzi566f">secret Password: bq3m</a>
-	</p>
-	<p>
-		<a href="https://wwb.lanzoub.com/itHYy02yd27e">flappybird(in progress) Password: 5hne</a>
-	</p>
-	加法器
-	<input id="plusA" type="text">+
-	<input id="plusB" type="text">=
-	<strong id="plusResult">结果</strong>
-	<button type="button" onclick="plus()">计算</button>
+		加法器
+		<input id="plusA" type="text">+
+		<input id="plusB" type="text">=
+		<strong id="plusResult">结果</strong>
+		<button type="button" onclick="plus()">计算</button>
 	</p>
 	<p>
 		减法器
