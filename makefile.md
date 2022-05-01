@@ -129,8 +129,8 @@ SRCS2 := $(wildcard *.cpp) # put it in the wildcard function
 
 .PHONY: test
 test:
-	echo $(SRC)
-	echo $(SRC2)
+	echo $(SRCS)
+	echo $(SRCS2)
 ```
 When there are two files with suffix `.cpp`: `a.cpp`, `b.cpp`, the output will be
 ```
